@@ -10,7 +10,6 @@
 @section('content-header')
     <h1 class="my-3">Lista post</h1>
     <a href="{{ route('admin.projects.create') }}" class="btn btn-outline-primary">Crea Nuovo elemento</a>
-
 @endsection
 
 
@@ -39,6 +38,11 @@
                         <td>
                             <a href="{{ route('admin.projects.show', $project) }}" class="mx-3">
                                 <i class="fa-solid fa-eye"></i>
+                            </a>
+                        </td>
+                        <td>
+                            <a href="{{ route('admin.projects.edit', $project) }}" class="mx-3">
+                                <i class="fa-solid fa-pen-to-square"></i>
                             </a>
                         </td>
                     </tr>
