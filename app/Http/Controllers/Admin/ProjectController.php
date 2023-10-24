@@ -76,7 +76,12 @@ class ProjectController extends Controller
      */
     public function update(Request $request, Project $project)
     {
-        //
+       $data = $request->all();
+       $project->title = $data['title'];
+       $project->content = $data['content'];
+       $project->slug = Str::slug($project->title);
+       $project->save();
+       return redirect()->route('admin.projects.show', compact('project'));
     }
 
     /**
