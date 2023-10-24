@@ -9,7 +9,8 @@
 
 @section('content-header')
     <h1 class="my-3">Lista post</h1>
-    <a href="{{ route('admin.projects.create') }}" class="btn btn-outline-primary">Torna alla lista</a>
+    <a href="{{ route('admin.projects.create') }}" class="btn btn-outline-primary">Crea Nuovo elemento</a>
+
 @endsection
 
 
